@@ -1,14 +1,27 @@
 body {
-  background: rgb(208, 226, 232) url("img_tree.gif") no-repeat fixed center;
+  background: rgb(208, 226, 232)
 }
-h1 {
-  font-size: 60px;
-}
+
+ h1 {
+            /* Fontti ja tiiviys */
+            font-family: 'Oswald', 'Arial Narrow', sans-serif;
+            font-stretch: condensed;
+            
+            /* Koko ja lihavointi */
+            font-size: 5.5rem; /* Erittäin suuri ja näyttävä koko */
+            font-weight: 700;   /* Paksu / Bold-tasoinen tyyli */
+            
+            /* Luettavuus ja hienosäätö */
+            line-height: 1.1;       /* Tiivistää rivivälin suhteessa kokoon */
+            letter-spacing: -0.02em;/* Tuo kirjaimia aavistuksen lähemmäs toisiaan */
+            text-transform: uppercase; /* Vapaaehtoinen: tekee otsikosta vieläkin jämäkämmän */
+            
+            /* Väri ja asettelu */
+            color: #1a1a1a; /* Tyylikäs, lähes musta ammattimainen sävy */
+            margin-bottom: 20px;
+        }
 h1 {
   color: white;
-}
-h1 {
-  font-family: "Arial", Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
   text-align: center;
@@ -16,6 +29,15 @@ h1 {
 h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+p {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: ;condensed;
+}
+
 /* Pääsäilö, joka asettaa kortit rinnakkain */
 .flex-container {
   display: flex;
@@ -83,4 +105,19 @@ h1 {
 /* Napin hover-efekti */
 .card-btn:hover {
   background-color: #0056b3;
+}
+/* Kohdistetaan tyylit vain footerin sisällä oleviin linkkeihin */
+footer a {
+  font-family: 'Arial', sans-serif; /* Muuttaa fontin */
+  font-size: 16px;                  /* Muuttaa fontin koon */
+  font-weight: bold;                /* Tekee tekstistä lihavan */
+  color: #fdfdfd;                   /* Muuttaa linkin värin (oranssi) */
+  text-decoration: none;            /* Poistaa oletusalleviivauksen */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Lisää varjon */
+}
+footer {
+  display: flex;
+  justify-content: center; /* Keskittää linkin vaakasuunnassa */
+  align-items: center;     /* Keskittää linkin pystysuunnassa */
+  min-height: 60px;        /* Antaa footerille korkeutta, jotta pystykeskitys näkyy */
 }
