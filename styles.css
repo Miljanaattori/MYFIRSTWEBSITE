@@ -1,5 +1,15 @@
 body {
-  background: rgb(208, 226, 232)
+  background: linear-gradient(to bottom, rgb(155, 190, 203), rgb(208, 226, 232)); 
+  margin: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* SUHTEELLINEN REUNUS: padding muuttuu näytön koon mukaan (5% näytön leveydestä) */
+  padding: 40px 5vw !important; 
+  box-sizing: border-box;
 }
 
  h1 {
@@ -18,7 +28,8 @@ body {
             
             /* Väri ja asettelu */
             color: #1a1a1a; /* Tyylikäs, lähes musta ammattimainen sävy */
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            margin-top: 10px;
         }
 h1 {
   color: white;
@@ -27,16 +38,19 @@ h1 {
   text-align: center;
 }
 h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
 }
-p {
-  color: white;
+h2 {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
   text-align: center;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  font-stretch: ;condensed;
+  font-size: 36px; /* Voit muuttaa tätä numeroa ladataksesi isomman tai pienemmän otsikon */
+  margin: 30px auto;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Pääsäilö, joka asettaa kortit rinnakkain */
 .flex-container {
@@ -57,7 +71,7 @@ p {
   overflow: hidden;      /* Pyöristää myös kuvan yläkulmat */
   
   /* Flexbox-ohjaus kortin koolle: */
-  flex: 1 1 300px;       /* Kasvaa ja kutistuu, ihanneleveys 300px */
+  flex: 1 1 280px;       /* Kasvaa ja kutistuu, ihanneleveys 300px */
   max-width: 380px;      /* Estää kortteja venymästä liian leveiksi isolla ruudulla */
   
   /* Sisäinen Flexbox: Pakottaa sisällön pystysuoraan */
@@ -94,7 +108,7 @@ p {
   display: block;
   text-align: center;
   text-decoration: none;
-  background-color: #007bff;
+  background-color: #707982;
   color: #ffffff;
   padding: 12px;
   border-radius: 6px;
@@ -104,7 +118,7 @@ p {
 
 /* Napin hover-efekti */
 .card-btn:hover {
-  background-color: #0056b3;
+  background-color: #596776;
 }
 /* Kohdistetaan tyylit vain footerin sisällä oleviin linkkeihin */
 footer a {
