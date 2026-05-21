@@ -78,7 +78,7 @@ h3{
   overflow: hidden;      /* Pyöristää myös kuvan yläkulmat */
   
   /* Flexbox-ohjaus kortin koolle: */
-  flex: 1 1 280px;       /* Kasvaa ja kutistuu, ihanneleveys 300px */
+  flex: 1 1 280px;       /* Kasvaa ja kutistuu, ihanneleveys 280px */
   max-width: 380px;      /* Estää kortteja venymästä liian leveiksi isolla ruudulla */
   
   /* Sisäinen Flexbox: Pakottaa sisällön pystysuoraan */
@@ -127,18 +127,18 @@ h3{
 .card-btn:hover {
   background-color: #596776;
 }
-/* Kohdistetaan tyylit vain footerin sisällä oleviin linkkeihin */
+
 footer a {
-  font-family: 'Arial', sans-serif; /* Muuttaa fontin */
-  font-size: 16px;                  /* Muuttaa fontin koon */
-  font-weight: bold;                /* Tekee tekstistä lihavan */
-  color: #fdfdfd;                   /* Muuttaa linkin värin (oranssi) */
-  text-decoration: none;            /* Poistaa oletusalleviivauksen */
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Lisää varjon */
+  font-family: 'Arial', sans-serif; 
+  font-size: 16px;                
+  font-weight: bold;              
+  color: #fdfdfd;                   
+  text-decoration: none;            
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); 
 }
 footer {
   display: flex;
-  justify-content: center; /* Keskittää linkin vaakasuunnassa */
-  align-items: center;     /* Keskittää linkin pystysuunnassa */
-  min-height: 60px;        /* Antaa footerille korkeutta, jotta pystykeskitys näkyy */
+  justify-content: center; 
+  align-items: center;    
+  min-height: 60px;       
 }
