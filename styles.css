@@ -1,0 +1,86 @@
+body {
+  background: rgb(208, 226, 232) url("img_tree.gif") no-repeat fixed center;
+}
+h1 {
+  font-size: 60px;
+}
+h1 {
+  color: white;
+}
+h1 {
+  font-family: "Arial", Arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+  text-align: center;
+}
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* Pääsäilö, joka asettaa kortit rinnakkain */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;       /* Sallii korttien siirtyä uudelle riville */
+  gap: 24px;             /* Väli korttien väliin (vaaka- ja pystysuunnassa) */
+  justify-content: center; /* Keskittää kortit, jos tilaa jää yli */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Yksittäinen kortti */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;      /* Pyöristää myös kuvan yläkulmat */
+  
+  /* Flexbox-ohjaus kortin koolle: */
+  flex: 1 1 300px;       /* Kasvaa ja kutistuu, ihanneleveys 300px */
+  max-width: 380px;      /* Estää kortteja venymästä liian leveiksi isolla ruudulla */
+  
+  /* Sisäinen Flexbox: Pakottaa sisällön pystysuoraan */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Kortin kuva */
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;     /* Pitää kuvan suhteet oikeana rajauksesta huolimatta */
+}
+
+/* Kortin tekstiosio */
+.card-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;          /* Täyttää kortin tyhjän tilan */
+  justify-content: space-between; /* Työntää otsikon ylös ja napin alas */
+  gap: 16px;
+}
+
+/* Kortin otsikko */
+.card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333333;
+}
+
+/* Linkkinappi */
+.card-btn {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+/* Napin hover-efekti */
+.card-btn:hover {
+  background-color: #0056b3;
+}
